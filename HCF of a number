@@ -1,0 +1,28 @@
+#include<iostream>
+using namespace std;
+int main()
+{
+    int n,m;
+    cin>>n;
+    cin>>m;
+    int high;
+    if(n>m)
+    {
+        high=n;
+    }
+    else
+    {
+        high=m;
+    }
+    int sum=1;
+    for(int i=2;i<=high;i++)
+    {
+        while(n%i==0 && m%i==0)
+        {
+            sum=sum*i;
+            n=n/i;
+            m=m/i;
+        }
+    }
+    cout<<sum;
+}
