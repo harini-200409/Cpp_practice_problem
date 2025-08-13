@@ -13,9 +13,9 @@ int main()
     {
         if(arr[i]==0)
         {
-            cout<<"You get stuck at the index "<<i;
+            cout<<"NO , You get stuck at the index "<<i;
             return 0;
         }
     }
-    cout<<"Start at index 0 -> jumped to index 1 -> extra -> jumped to last index "<<n;
+    cout<<"YES , Start at index 0 -> jumped to index 1 -> extra -> jumped to last index "<<n;
 }
